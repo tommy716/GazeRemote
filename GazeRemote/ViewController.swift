@@ -48,6 +48,10 @@ class ViewController: UIViewController {
         self.view.addSubview(mouseView)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.mouseView.center = self.view.center
+    }
+    
     func moveMouse(x: CGFloat, y: CGFloat) {
         mouseView.center.x += x * 20
         mouseView.center.y -= y * 20
