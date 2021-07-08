@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65F7543F2696A549001260EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7543E2696A549001260EB /* AppDelegate.swift */; };
+		65F754412696A549001260EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F754402696A549001260EB /* SceneDelegate.swift */; };
+		65F754432696A549001260EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F754422696A549001260EB /* ViewController.swift */; };
+		65F754462696A549001260EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F754442696A549001260EB /* Main.storyboard */; };
+		65F754482696A54B001260EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F754472696A54B001260EB /* Assets.xcassets */; };
+		65F7544B2696A54B001260EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F754492696A54B001260EB /* LaunchScreen.storyboard */; };
+		65F754552696A5B4001260EB /* MPIrisTrackerH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F754532696A5AF001260EB /* MPIrisTrackerH.framework */; };
+		65F754562696A5B4001260EB /* MPIrisTrackerH.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65F754532696A5AF001260EB /* MPIrisTrackerH.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F7545D2696A762001260EB /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7545C2696A762001260EB /* Const.swift */; };
+		65F754602696B393001260EB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 65F7545F2696B393001260EB /* Alamofire */; };
+		65F754622696B3EE001260EB /* token.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65F754612696B3ED001260EB /* token.plist */; };
+		65F754642696B407001260EB /* NatureRemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F754632696B407001260EB /* NatureRemo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65F754572696A5B4001260EB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65F754562696A5B4001260EB /* MPIrisTrackerH.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		65F7543B2696A549001260EB /* GazeRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GazeRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F7543E2696A549001260EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65F754402696A549001260EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		65F754422696A549001260EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65F754452696A549001260EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65F754472696A54B001260EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65F7544A2696A54B001260EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65F7544C2696A54B001260EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F754532696A5AF001260EB /* MPIrisTrackerH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MPIrisTrackerH.framework; sourceTree = "<group>"; };
+		65F754582696A679001260EB /* GazeRemote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GazeRemote-Bridging-Header.h"; sourceTree = "<group>"; };
+		65F7545C2696A762001260EB /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		65F754612696B3ED001260EB /* token.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = token.plist; sourceTree = "<group>"; };
+		65F754632696B407001260EB /* NatureRemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureRemo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65F754382696A549001260EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F754552696A5B4001260EB /* MPIrisTrackerH.framework in Frameworks */,
+				65F754602696B393001260EB /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65F754322696A549001260EB = {
+			isa = PBXGroup;
+			children = (
+				65F7543D2696A549001260EB /* GazeRemote */,
+				65F7543C2696A549001260EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65F7543C2696A549001260EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65F7543B2696A549001260EB /* GazeRemote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65F7543D2696A549001260EB /* GazeRemote */ = {
+			isa = PBXGroup;
+			children = (
+				65F754522696A577001260EB /* Frameworks */,
+				65F7545B2696A756001260EB /* SupportingFile */,
+				65F7543E2696A549001260EB /* AppDelegate.swift */,
+				65F754402696A549001260EB /* SceneDelegate.swift */,
+				65F754422696A549001260EB /* ViewController.swift */,
+				65F754442696A549001260EB /* Main.storyboard */,
+				65F754472696A54B001260EB /* Assets.xcassets */,
+				65F754492696A54B001260EB /* LaunchScreen.storyboard */,
+				65F7544C2696A54B001260EB /* Info.plist */,
+				65F754582696A679001260EB /* GazeRemote-Bridging-Header.h */,
+			);
+			path = GazeRemote;
+			sourceTree = "<group>";
+		};
+		65F754522696A577001260EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65F754532696A5AF001260EB /* MPIrisTrackerH.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		65F7545B2696A756001260EB /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				65F7545C2696A762001260EB /* Const.swift */,
+				65F754612696B3ED001260EB /* token.plist */,
+				65F754632696B407001260EB /* NatureRemo.swift */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65F7543A2696A549001260EB /* GazeRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F7544F2696A54B001260EB /* Build configuration list for PBXNativeTarget "GazeRemote" */;
+			buildPhases = (
+				65F754372696A549001260EB /* Sources */,
+				65F754382696A549001260EB /* Frameworks */,
+				65F754392696A549001260EB /* Resources */,
+				65F754572696A5B4001260EB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GazeRemote;
+			packageProductDependencies = (
+				65F7545F2696B393001260EB /* Alamofire */,
+			);
+			productName = GazeRemote;
+			productReference = 65F7543B2696A549001260EB /* GazeRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65F754332696A549001260EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					65F7543A2696A549001260EB = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 65F754362696A549001260EB /* Build configuration list for PBXProject "GazeRemote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65F754322696A549001260EB;
+			packageReferences = (
+				65F7545E2696B393001260EB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 65F7543C2696A549001260EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65F7543A2696A549001260EB /* GazeRemote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65F754392696A549001260EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F7544B2696A54B001260EB /* LaunchScreen.storyboard in Resources */,
+				65F754482696A54B001260EB /* Assets.xcassets in Resources */,
+				65F754622696B3EE001260EB /* token.plist in Resources */,
+				65F754462696A549001260EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65F754372696A549001260EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F754432696A549001260EB /* ViewController.swift in Sources */,
+				65F754642696B407001260EB /* NatureRemo.swift in Sources */,
+				65F7545D2696A762001260EB /* Const.swift in Sources */,
+				65F7543F2696A549001260EB /* AppDelegate.swift in Sources */,
+				65F754412696A549001260EB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65F754442696A549001260EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F754452696A549001260EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65F754492696A54B001260EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F7544A2696A54B001260EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65F7544D2696A54B001260EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65F7544E2696A54B001260EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65F754502696A54B001260EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2P44D5B93M;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GazeRemote/Frameworks",
+				);
+				INFOPLIST_FILE = GazeRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.tommy.GazeRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GazeRemote/GazeRemote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65F754512696A54B001260EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2P44D5B93M;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GazeRemote/Frameworks",
+				);
+				INFOPLIST_FILE = GazeRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.tommy.GazeRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GazeRemote/GazeRemote-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65F754362696A549001260EB /* Build configuration list for PBXProject "GazeRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F7544D2696A54B001260EB /* Debug */,
+				65F7544E2696A54B001260EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F7544F2696A54B001260EB /* Build configuration list for PBXNativeTarget "GazeRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F754502696A54B001260EB /* Debug */,
+				65F754512696A54B001260EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65F7545E2696B393001260EB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65F7545F2696B393001260EB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65F7545E2696B393001260EB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 65F754332696A549001260EB /* Project object */;
+}
