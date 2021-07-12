@@ -53,8 +53,8 @@ class ViewController: UIViewController {
     }
     
     func moveMouse(x: CGFloat, y: CGFloat) {
-        mouseView.center.x += x * 20
-        mouseView.center.y -= y * 20
+        mouseView.center.x += x * 300
+        mouseView.center.y -= y * 300
         
         if mouseView.center.x >= screenSize.width - (mouseView.frame.width / 2) {
             mouseView.center.x = screenSize.width - (mouseView.frame.width / 2)
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
     }
     
     func blinkingDetection() {
-        if (self.leftEye?.isBlinking() ?? false) && (self.rightEye?.isBlinking() ?? false) && timer == nil {
+        if (self.leftEye?.isBlinking(threshold: 0.025) ?? false) && (self.rightEye?.isBlinking(threshold: 0.025) ?? false) && timer == nil {
             self.mouseView.backgroundColor = .red
             self.timer = Timer.scheduledTimer(
                 timeInterval: 0.5,
@@ -79,7 +79,7 @@ class ViewController: UIViewController {
                 selector: #selector(self.timerCounter),
                 userInfo: nil,
                 repeats: true)
-        } else if !(self.leftEye?.isBlinking() ?? true) && !(self.rightEye?.isBlinking() ?? true) && timer != nil {
+        } else if !(self.leftEye?.isBlinking(threshold: 0.025) ?? true) && !(self.rightEye?.isBlinking(threshold: 0.025) ?? true) && timer != nil {
             timer!.invalidate()
             self.mouseView.backgroundColor = .gray
             if timerCount > 1.5 {
@@ -127,7 +127,7 @@ extension ViewController: MPTrackerDelegate {
                 let relativeCoordinateRight = self.rightEye!.calculateRelativePosition(iris: landmarks[5])
                 self.rightInfoLabel.text = "R(\(String(format: "%01.2f", relativeCoordinateRight.x)), \(String(format: "%01.2f", relativeCoordinateRight.y)))"
                 
-                if !(self.leftEye?.isBlinking() ?? false) && !(self.rightEye?.isBlinking() ?? false) {
+                if !(self.leftEye?.isBlinking(threshold: 0.03) ?? false) && !(self.rightEye?.isBlinking(threshold: 0.03) ?? false) {
                     self.moveMouse(x: CGFloat(relativeCoordinateLeft.x + relativeCoordinateRight.x), y: CGFloat(relativeCoordinateLeft.y + relativeCoordinateRight.y))
                 }
                 

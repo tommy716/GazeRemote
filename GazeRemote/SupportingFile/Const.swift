@@ -30,9 +30,9 @@ class Eye {
         return Coordinate(x: x, y: y)
     }
     
-    func isBlinking() -> Bool {
+    func isBlinking(threshold: Float) -> Bool {
         // TODO: 閾値の調整
-        return (self.bottomEdge.y - self.topEdge.y) < 0.015 ? true : false
+        return (self.bottomEdge.y - self.topEdge.y) < threshold ? true : false
     }
 }
 
