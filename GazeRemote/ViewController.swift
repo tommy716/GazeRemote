@@ -11,7 +11,6 @@ class ViewController: UIViewController {
     
     // MARK: Variables
     var irisTracker: MPIrisTrackerH!
-    var documentInteraction: UIDocumentInteractionController!
     var leftEye: Eye?
     var rightEye: Eye?
     
